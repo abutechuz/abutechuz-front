@@ -1,0 +1,84 @@
+.site-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  min-width: 126px;
+  min-height: 28px;
+}
+
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__features {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-header__tel-link {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #00094a;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.site-header__tel-link:hover {
+  opacity: 0.8;
+}
+
+.site-header__tel-link:active {
+  opacity: 0.6;
+}
+
+.site-header__night-mode::after {
+  content: '';
+  min-height: 22px;
+  min-width: 1px;
+  background-color: #00094a;
+  background-repeat: no-repeat;
+  margin-left: 32px;
+}
+
+.site-header__phonecall {
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 10px;
+}
+
+/* Select Language: */
+.site-header__select-lang {
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #00094a;
+  background-color: transparent;
+  outline: none;
+  margin-left: 30px;
+  cursor: pointer;
+}
