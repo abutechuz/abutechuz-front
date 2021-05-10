@@ -1,0 +1,13 @@
+.form {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.form-wrapper__inner {
+    margin-right: 127px;
+    display: flex;
+    flex-direction: column;
+}  
