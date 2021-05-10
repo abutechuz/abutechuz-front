@@ -24,8 +24,9 @@ function Header() {
             <select
               className='site-header__select-lang'
               name='select-lang'
+              defaultValue='uz'
               id='select-lang'>
-              <option value='uz' selected>
+              <option value='uz'>
                 Uz
               </option>
               <option value='ru'>Ru</option>
