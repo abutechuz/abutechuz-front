@@ -8,6 +8,7 @@ import Facebook from "../Lib/Svg/Facebook"
 function FormSocial () {
     return (
         <>
+        <div className="form-social">
             <h3 className="form-social__title">Мы в соцсетях</h3>
             <ul className="form-social__list">
                 <li className="form-social__item">
@@ -31,6 +32,7 @@ function FormSocial () {
                     </a>
                 </li>
             </ul>
+        </div>
         </>
     )
 }

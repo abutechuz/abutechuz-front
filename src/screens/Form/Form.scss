@@ -5,9 +5,22 @@
 .form-wrapper {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .form-wrapper__inner {
     margin-right: 127px;
     display: flex;
     flex-direction: column;
 }  
+@media only screen and (max-width: 1042px) {
+    .form {
+        padding-bottom: 70px;
+    }
+    .form-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-wrapper__inner {
+        margin-right: 0;
+    }
+}

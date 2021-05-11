@@ -12,6 +12,10 @@
     border-radius: 3px;
     padding: 16px 20px;
     margin-bottom: 20px;
+    &:focus {
+        outline: none;
+        border: 1px solid #00094A;
+    }
     
     &::placeholder {
         font-weight: 500;
@@ -34,26 +38,12 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    
-    
-    & > span {
-        position: absolute;
-        top: calc(100% + 5px);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        color: #FF3636;
-        display: none;
-    }
-    & > .form-main__sub-input:invalid  span{
-        display: block;
-    }   
-    
+
     &:last-child {
         margin-right: 0;
     }
 }
+
 .form-main__sub-input {
     max-width: 298px;
     width: 100%;
@@ -61,6 +51,10 @@
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     padding: 16px 20px;
+    &:focus {
+        outline: none;
+        border: 1px solid #00094A;
+    }
     
     &::placeholder {
         font-weight: 500;
@@ -70,6 +64,19 @@
         opacity: 0.5;
     }
 }
+.form-main__sub-input-span {
+    position: absolute;
+    top: calc(100% + 5px);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF3636;
+    display: none;
+}
+.form-main__sub-input:invalid ~ .form-main__sub-input-span{
+    display: block;
+}  
 .form-main__texarea {
     padding: 16px 20px;
     width: 100%;
@@ -79,6 +86,10 @@
     border-radius: 3px;
     resize: vertical;
     margin-bottom: 20px;
+    &:focus {
+        outline: none;
+        border: 1px solid #00094A;
+    }
     
     &::placeholder {
         font-weight: 500;
@@ -89,7 +100,6 @@
     }
 }
 .form-main__file {
-    // width: 200px;
     padding: 14px 25px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
@@ -120,4 +130,32 @@
     background-color: #30D2A3;
     border-radius: 3px;
     margin-top: 30px;
+}
+@media only screen and (max-width: 1042px) {
+    .form-main {
+        padding-bottom: 135px;
+        max-width: 100%;
+    }
+    .form-main__inner {
+        max-width: 100%;
+    }
+    .form-main__sub-input {
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .form-main__inner {
+        flex-direction: column;
+        // margin-bottom: 0;
+    }
+    .form-main__sub-input {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-main__sub-input-span {
+        top: calc(100% - 5px);
+    }
+    .form-main__btn {
+        margin-top: 40px;
+    }
 }

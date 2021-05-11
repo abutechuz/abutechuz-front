@@ -11,6 +11,7 @@
     text-transform: uppercase;
     color: #00094A;
     text-align: left;
+    margin-bottom: 10px;
 }
 .form-inner__text {
     margin: 0;
@@ -20,10 +21,25 @@
     line-height: 61px;
     color: #00094A;
     & > span {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 50px;
-        line-height: 61px;
         color: #30D2A3;   
+    }
+}
+
+@media only screen and (max-width: 1042px) {
+    .form-inner {
+        margin-bottom: 23px;
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 690px) {
+    .form-inner__title {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 5px;
+    }
+    .form-inner__text {
+        font-size: 30px;
+        line-height: 37px;
     }
 }
