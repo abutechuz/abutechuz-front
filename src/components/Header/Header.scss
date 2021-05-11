@@ -107,23 +107,3 @@
 .site-header__request-button:active {
 	opacity: 0.6;
 }
-
-/* Hamburger */
-.site-header__hamburger {
-	display: flex;
-	align-items: center;
-	margin-left: 35px;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 15px;
-	color: #00094a;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-}
-
-.site-header__hamburger-icon {
-	min-width: 17px;
-	min-height: 12px;
-	margin-left: 10px;
-}

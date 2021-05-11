@@ -1,0 +1,29 @@
+.form-inner {
+    margin-bottom: 161px;
+    max-width: 529px;
+    width: 100%;
+}
+.form-inner__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #00094A;
+    text-align: left;
+}
+.form-inner__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094A;
+    & > span {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 61px;
+        color: #30D2A3;   
+    }
+}

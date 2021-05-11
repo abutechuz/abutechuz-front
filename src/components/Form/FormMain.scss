@@ -1,0 +1,123 @@
+.form-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 627px;
+    width: 100%;
+}
+.form-main__input {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    
+    &::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #00094A;
+        opacity: 0.5;
+    }
+}
+.form-main__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    max-width: 627px;
+    width: 100%;
+}
+.form-main__label {
+    margin-right: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    
+    
+    & > span {
+        position: absolute;
+        top: calc(100% + 5px);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FF3636;
+        display: none;
+    }
+    & > .form-main__sub-input:invalid  span{
+        display: block;
+    }   
+    
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.form-main__sub-input {
+    max-width: 298px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    padding: 16px 20px;
+    
+    &::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #00094A;
+        opacity: 0.5;
+    }
+}
+.form-main__texarea {
+    padding: 16px 20px;
+    width: 100%;
+    min-height: 150px;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    resize: vertical;
+    margin-bottom: 20px;
+    
+    &::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #00094A;
+        opacity: 0.5;
+    }
+}
+.form-main__file {
+    // width: 200px;
+    padding: 14px 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.form-main__file-span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-left: 6px;
+}
+.form-main__btn {
+    cursor: pointer;
+    border: none;
+    padding: 14px 53px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px; 
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #30D2A3;
+    border-radius: 3px;
+    margin-top: 30px;
+}
