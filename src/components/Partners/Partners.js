@@ -1,16 +1,45 @@
 import React from 'react'
 import Container from '../Container/Container'
 import { Link } from 'react-router-dom'
-import TinySlider from 'tiny-slider-react'
+import Slider from 'react-slick'
 import './Partners.scss'
+import SpaceX from '../../assets/images/spacex.png'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 function Partners() {
     const settings = {
-        lazyload: true,
-        nav: true,
-        controls: false,
-        mouseDrag: true,
-        items: 8,
+        className: 'partners__slider',
+        dots: true,
+        centerMode: true,
+        infinite: true,
+        slidesToShow: 1,
+        speed: 500,
+        rows: 2,
+        slidesPerRow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1385,
+                settings: {
+                    slidesToShow: 1,
+                    slidesPerRow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesPerRow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+        ],
     }
 
     return (
@@ -26,22 +55,71 @@ function Partners() {
                     угодно.
                 </p>
 
-                <TinySlider settings={settings}>
-                    <div className='push'>Link 1</div>
-                    <div className='push'>Link 2</div>
-                    <div className='push'>Link 3</div>
-                    <div className='push'>Link 4</div>
-                    <div className='push'>Link 5</div>
-                    <div className='push'>Link 6</div>
-                    <div className='push'>Link 7</div>
-                    <div className='push'>Link 8</div>
-                    <div className='push'>Link 9</div>
-                    <div className='push'>Link 10</div>
-                    <div className='push'>Link 11</div>
-                </TinySlider>
+                <Slider {...settings}>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                    <a className='partners__slider-link' href='#link'>
+                        <img src={SpaceX} alt='Rasm ' />
+                    </a>
+                </Slider>
 
                 <Link className='partners__link' to='/become-partner'>
-                    Link
+                    стать партнёром
                 </Link>
             </Container>
         </section>

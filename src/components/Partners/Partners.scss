@@ -1,0 +1,94 @@
+.partners {
+    padding: 100px 0;
+    padding-top: 50px;
+}
+
+.partners__heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094a;
+}
+
+.partners__paragraph {
+    max-width: 590px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00094a;
+    opacity: 0.8;
+}
+
+.partners__heading-small {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00094a;
+}
+
+.partners__slider {
+    margin-bottom: 60px;
+}
+
+.partners__slider .slick-list {
+    padding: 0 50px !important;
+    margin: 0 -30px !important;
+}
+
+.partners__slider-link {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 280px !important;
+    height: 122px;
+    background: #ffffff;
+    border: 1px solid #ececec;
+    padding: 15px;
+    margin: 15px;
+}
+
+.partners__slider .slick-dots {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.partners__slider .slick-dots li {
+    width: 7px !important;
+    height: 7px !important;
+    margin: 0 5px !important;
+    background-image: url('../../assets/images/slick-dot.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7px;
+}
+.partners__slider .slick-dots .slick-active {
+    width: 10px !important;
+    height: 10px !important;
+    background-image: url('../../assets/images/active-slick-dot.png');
+    background-size: 10px;
+}
+
+.partners__slider .slick-dots li button::before {
+    display: none;
+}
+
+.partners__link {
+    width: 190px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background: #00094a;
+    border-radius: 3px;
+}
