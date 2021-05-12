@@ -11,8 +11,8 @@ function Home() {
 		<>
 			<Hero />
 			<Statistics />
-			<HomeTool />
 			<Services />
+			<HomeTool />
 			<HomeNews />
 			<Partners />
 		</>
