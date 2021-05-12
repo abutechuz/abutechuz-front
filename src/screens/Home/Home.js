@@ -11,7 +11,6 @@ function Home() {
             <Partners />
         </>
     )
-
- 
+}
 
 export default Home
