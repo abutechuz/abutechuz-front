@@ -12,12 +12,16 @@ function HomeTool() {
                     <small className='hometool__small-heading'>
                         ЗНАЕТЕ ЛИ ВЫ
                     </small>
-                    ЧТО МЫ <br/> ИСПОЛЬЗУЕМ ЭТИ?
+                    ЧТО МЫ <br /> ИСПОЛЬЗУЕМ ЭТИ?
                 </h2>
 
                 <ul className='hometool__nav-list'>
                     <li className='hometool__nav-item'>
-                        <NavLink className='hometool__nav-link' activeClassName='hometool__nav-link--active' to='/' exact>
+                        <NavLink
+                            className='hometool__nav-link'
+                            activeClassName='hometool__nav-link--active'
+                            to='/'
+                            exact>
                             Backend
                         </NavLink>
                     </li>
@@ -188,8 +192,6 @@ function HomeTool() {
                                     React
                                 </h3>
                             </li>
-                         
-                            
                         </ul>
                     </Route>
                     <Route path='/hometool/frontend' exact>

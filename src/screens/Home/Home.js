@@ -5,6 +5,7 @@ import Hero from '../../components/Hero/Hero'
 import HomeTool from '../../components/HomeTool/HomeTool'
 import Statistics from '../../components/Statistics/Statistics'
 import Services from '../../components/Services/Services'
+import HomeTeam from '../../components/HomeTeam/HomeTeam'
 
 function Home() {
 	return (
@@ -12,6 +13,7 @@ function Home() {
 			<Hero />
 			<Statistics />
 			<Services />
+            <HomeTeam/>
 			<HomeTool />
 			<HomeNews />
 			<Partners />
