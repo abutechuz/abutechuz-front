@@ -1,0 +1,135 @@
+.hometool .container {
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+.hometool__small-heading {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00094a;
+}
+
+.hometool__heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #00094a;
+}
+
+.hometool__nav-list{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #B8B8B8;
+}
+
+.hometool__nav-item + .hometool__nav-item  {
+    margin-left: 60px;
+}
+
+.hometool__nav-link{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 22px;
+    border-bottom: 3px solid white;
+
+    &:hover{
+        color: #06A39C;
+    }
+}
+
+ 
+.hometool__nav-link--active{
+    color: #06A39C;
+    border-bottom: 3px solid #06A39C;
+}
+
+.hometool__tools-list{
+    width: 100%;
+    max-width: 1185px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 35px;
+    list-style-type: none;
+}
+
+.hometool__tools-item{
+    margin: 40px 60px;
+}
+
+@media only screen and (max-width: 900px){
+    .hometool__nav-list{
+        padding-left: 100px;
+        width: 100%;
+        max-width: 790px;
+        overflow-x: scroll;
+    }
+}
+
+@media only screen and (max-width: 735px){
+    .hometool__nav-list{
+        padding-left: 200px;  
+    }
+}
+
+@media only screen and (max-width: 630px){
+
+    .hometool__heading{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    
+    .hometool__nav-list{
+        padding-left: 300px;
+       
+    }   
+}
+
+@media only screen and (max-width: 530px){
+ 
+    .hometool__nav-list{
+        padding-left: 400px;
+       
+    }
+}
+
+@media only screen and (max-width: 430px){
+
+ 
+    .hometool__nav-list{
+        padding-left: 300px;
+    }
+
+    .hometool__nav-item + .hometool__nav-item  {
+        margin-left: 30px;
+    }
+
+    .hometool__tools-item{
+       margin: 30px 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 370px){
+
+ 
+    .hometool__nav-item + .hometool__nav-item  {
+        margin-left: 20px;
+    }
+
+    
+}
