@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink, Route, Switch } from 'react-router-dom'
-import ReactImg from '../../assets/images/react-img.png'
 import Container from '../Container/Container'
 import './HomeTool.scss'
 
@@ -78,7 +77,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -91,7 +90,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -104,7 +103,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -117,7 +116,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -130,7 +129,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -143,7 +142,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -156,7 +155,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -169,7 +168,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
@@ -182,7 +181,7 @@ function HomeTool() {
                             <li className='hometool__tools-item'>
                                 <img
                                     className='hometool__tools-img'
-                                    src={ReactImg}
+                                    src='https://via.placeholder.com/65x60'
                                     alt='Tech tool illustration'
                                     width='65'
                                     height='60'
