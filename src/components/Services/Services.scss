@@ -1,0 +1,122 @@
+/* Services Section */
+.services__wrapper {
+	padding-top: 40px;
+	padding-bottom: 45px;
+}
+
+.services__heading {
+	margin: 0;
+	margin-bottom: 50px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	color: #00094a;
+	max-width: 376px;
+}
+
+.services__heading-highlighted {
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 61px;
+}
+
+.services__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin: -30px;
+}
+
+.services__item {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	max-width: 298px;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	margin: 30px;
+	transition: box-shadow 0.3s ease;
+
+	&:hover {
+		box-shadow: 0px 0px 0px 3px rgba(7, 50, 90, 0.1);
+	}
+}
+
+.services__link {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	text-decoration: none;
+	color: #00094a;
+	padding: 60px 30px 30px;
+	text-align: center;
+	flex-grow: 1;
+
+	&:hover > .services__next-arrow-icon {
+		opacity: 1;
+	}
+}
+
+.services__title {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-bottom: 12px;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 32px;
+}
+
+.services__title::before {
+	content: '';
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+	min-width: 100px;
+	min-height: 100px;
+	background-repeat: no-repeat;
+}
+
+.services__item-programming .services__title::before {
+	background-image: url('../../assets/images/programming.png');
+}
+
+.services__item-design .services__title::before {
+	background-image: url('../../assets/images/design.png');
+}
+
+.services__item-marketing .services__title::before {
+	background-image: url('../../assets/images/marketing.png');
+}
+
+.services__item-branding .services__title::before {
+	background-image: url('../../assets/images/branding.png');
+}
+
+.services__item-production .services__title::before {
+	background-image: url('../../assets/images/production.png');
+}
+
+.services__item-service .services__title::before {
+	background-image: url('../../assets/images/design-service.png');
+}
+
+.services__desc {
+	margin: 0;
+	margin-bottom: 30px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	opacity: 0.6;
+}
+
+.services__next-arrow-icon {
+	opacity: 0;
+	margin-left: auto;
+	text-align: right;
+	transition: opacity 0.3s ease;
+	margin-top: auto;
+}

@@ -8,14 +8,14 @@ import './App.scss'
 function App() {
 	return (
 		<>
-			{/* <Header /> */}
+			<Header />
 			<main>
 				<Switch>
 					<Route path='/' component={Home} exact />
 					<Route path='/form' component={Form} exact />
 				</Switch>
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	)
 }

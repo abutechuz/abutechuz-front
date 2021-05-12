@@ -3,12 +3,14 @@ import Partners from '../../components/Partners/Partners'
 import HomeNews from '../../components/HomeNews/HomeNews'
 import Hero from '../../components/Hero/Hero'
 import Statistics from '../../components/Statistics/Statistics'
+import Services from '../../components/Services/Services'
 
 function Home() {
 	return (
 		<>
 			<Hero />
 			<Statistics />
+			<Services />
 			<HomeNews />
 			<Partners />
 		</>
