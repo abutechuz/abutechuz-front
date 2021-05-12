@@ -60,6 +60,7 @@ function HomeTool() {
                     <li className='hometool__nav-item'>
                         <NavLink
                             className='hometool__nav-link'
+                            activeClassName='hometool__nav-link--active'
                             to='/hometool/production'
                             exact>
                             Production
