@@ -6,18 +6,18 @@ import Form from './screens/Form/Form'
 import './App.scss'
 
 function App() {
-	return (
-		<>
-			{/* <Header /> */}
-			<main>
-				<Switch>
-					<Route path='/' component={Home} exact />
-					<Route path='/form' component={Form} exact />
-				</Switch>
-			</main>
-			{/* <Footer /> */}
-		</>
-	)
+    return (
+        <>
+            {/* <Header /> */}
+            <main>
+                <Switch>
+                    <Route path='/' component={Home} />
+                    <Route path='/form' component={Form} exact />
+                </Switch>
+            </main>
+            <Footer />
+        </>
+    )
 }
 
 export default App
