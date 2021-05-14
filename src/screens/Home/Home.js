@@ -10,13 +10,13 @@ import HomeTeam from '../../components/HomeTeam/HomeTeam'
 function Home() {
 	return (
 		<>
-			<Hero />
-			<Statistics />
-			<Services />
+			{/* <Hero /> */}
+			{/* <Statistics /> */}
+			{/* <Services /> */}
             <HomeTeam/>
-			<HomeTool />
-			<HomeNews />
-			<Partners />
+			{/* <HomeTool /> */}
+			{/* <HomeNews /> */}
+			{/* <Partners /> */}
 		</>
 	)
 }

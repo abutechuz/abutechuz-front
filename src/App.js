@@ -8,7 +8,7 @@ import './App.scss'
 function App() {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <main>
                 <Switch>
                     <Route path='/' component={Home} />

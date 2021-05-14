@@ -138,6 +138,11 @@
         width: 100%;
     }
 
+    .site-footer__top-form:nth-child(1) .container {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
     .site-footer__top-form:nth-child(2) .container {
         margin: 0 auto;
     }
