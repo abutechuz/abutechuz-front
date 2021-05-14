@@ -14,7 +14,7 @@ function Home() {
 			{/* <Statistics /> */}
 			{/* <Services /> */}
             <HomeTeam/>
-			{/* <HomeTool /> */}
+			<HomeTool />
 			{/* <HomeNews /> */}
 			{/* <Partners /> */}
 		</>

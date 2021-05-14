@@ -1,9 +1,10 @@
 import React from 'react'
-import { NavLink, Route, Switch } from 'react-router-dom'
+import { NavLink, Route, Switch, useRouteMatch } from 'react-router-dom'
 import Container from '../Container/Container'
 import './HomeTool.scss'
 
 function HomeTool() {
+    const { path, url } = useRouteMatch()
     return (
         <section className='hometool'>
             <Container>
@@ -19,7 +20,7 @@ function HomeTool() {
                         <NavLink
                             className='hometool__nav-link'
                             activeClassName='hometool__nav-link--active'
-                            to='/'
+                            to={url}
                             exact>
                             Backend
                         </NavLink>
@@ -28,8 +29,7 @@ function HomeTool() {
                         <NavLink
                             className='hometool__nav-link'
                             activeClassName='hometool__nav-link--active'
-                            to='/hometool/frontend'
-                            exact>
+                            to={`${url}/home-frontend`}>
                             Frontend
                         </NavLink>
                     </li>
@@ -37,8 +37,8 @@ function HomeTool() {
                         <NavLink
                             className='hometool__nav-link'
                             activeClassName='hometool__nav-link--active'
-                            to='/hometool/mobile'
-                            exact>
+                            to={`${url}/home-mobile`}>
+                            {' '}
                             Mobile
                         </NavLink>
                     </li>
@@ -46,8 +46,7 @@ function HomeTool() {
                         <NavLink
                             className='hometool__nav-link'
                             activeClassName='hometool__nav-link--active'
-                            to='/hometool/database'
-                            exact>
+                            to='/hometool/database'>
                             Database
                         </NavLink>
                     </li>
@@ -55,8 +54,7 @@ function HomeTool() {
                         <NavLink
                             className='hometool__nav-link'
                             activeClassName='hometool__nav-link--active'
-                            to='/hometool/design'
-                            exact>
+                            to='/hometool/design'>
                             Dizayn
                         </NavLink>
                     </li>
@@ -64,15 +62,14 @@ function HomeTool() {
                         <NavLink
                             className='hometool__nav-link'
                             activeClassName='hometool__nav-link--active'
-                            to='/hometool/production'
-                            exact>
+                            to='/hometool/production'>
                             Production
                         </NavLink>
                     </li>
                 </ul>
 
                 <Switch>
-                    <Route path='/' exact>
+                    <Route path={path} exact>
                         <ul className='hometool__tools-list'>
                             <li className='hometool__tools-item'>
                                 <img
@@ -193,9 +190,7 @@ function HomeTool() {
                             </li>
                         </ul>
                     </Route>
-                    <Route path='/hometool/frontend' exact>
-                        Frontend
-                    </Route>
+                    <Route path={`${path}/home-frontend`}>Frontend</Route>
                 </Switch>
             </Container>
         </section>
