@@ -1,0 +1,135 @@
+/* Hero Section */
+.hero__container {
+	padding-top: 195px;
+	padding-bottom: 56px;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-image: linear-gradient(
+			25deg,
+			#00094a 0.56%,
+			rgba(0, 9, 74, 0) 46.43%
+		),
+		url(../../assets/images/hero-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero__text-wrapper {
+	max-width: 493px;
+}
+
+.hero__heading {
+	margin: 0;
+	margin-bottom: 7px;
+	font-weight: 800;
+	font-size: 35px;
+	line-height: 43px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.hero__desc {
+	margin: 0;
+	margin-bottom: 15px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+}
+
+.hero__watch-video {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	border: none;
+	background-color: #00094a;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	transition: background-color 0.3s ease;
+}
+
+.hero__watch-video:hover {
+	background-color: #151d57;
+}
+
+.hero__watch-video:active {
+	background-color: #1d2561;
+}
+
+.hero__watch-video-icon {
+	margin-left: 30px;
+}
+
+/* Media Responsive: */
+@media screen and (max-width: 620px) {
+	.hero .container {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.hero__container {
+		padding-top: 195px;
+		padding-bottom: 56px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media screen and (max-width: 553px) {
+	.hero__text-wrapper {
+		max-width: 100%;
+	}
+
+	.hero__heading {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.hero__desc {
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.hero__container {
+		padding-top: 332px;
+		padding-bottom: 30px;
+		background-position: center center;
+		background-image: linear-gradient(
+				25deg,
+				#00094a 0.56%,
+				rgba(0, 9, 74, 0) 46.43%
+			),
+			url(../../assets/images/hero-bg-mobile.png);
+	}
+
+	.hero__text-wrapper {
+		max-width: 275px;
+	}
+
+	.hero__heading {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.hero__text-wrapper {
+		max-width: 100%;
+	}
+
+	.hero__desc {
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.hero__text-wrapper {
+		max-width: 275px;
+	}
+}
