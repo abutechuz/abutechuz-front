@@ -1,8 +1,13 @@
 .site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	padding-top: 16px;
 	padding-bottom: 16px;
 	white-space: nowrap;
-	display: none;
+	background-color: #fff;
+	z-index: 9999999999;
 }
 
 .logo {
@@ -27,6 +32,7 @@
 .site-header__wrapper {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .site-header__features {
@@ -88,7 +94,7 @@
 /* Request Button */
 .site-header__request-button {
 	padding: 15px 30px;
-	margin-left: 35px;
+	margin-left: 30px;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 12px;
@@ -107,4 +113,92 @@
 
 .site-header__request-button:active {
 	opacity: 0.6;
+}
+
+/* Hamburger */
+.site-header__hamburger {
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin-left: 35px;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	z-index: 9999;
+}
+
+.hamburger__icon {
+	margin-left: 10px;
+}
+
+.site-header__menu-list {
+	display: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.site-header__menu-list-open .site-header__menu-list {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+
+	top: 0;
+	right: 50%;
+	transform: translateX(calc(50% + 510px));
+	padding: 150px 90px;
+	background-color: #fff;
+	// max-width: 512px;
+	width: 40%;
+	height: 100vh;
+	z-index: 999;
+}
+
+.site-header__menu-item + .site-header__menu-item {
+	margin-top: 33px;
+}
+
+.site-header__menu-link {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;
+	color: #00094a;
+	transition: color 0.3s ease, opacity 0.3s ease;
+
+	&:hover {
+		color: #06a39c;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+.site-header__background-effect {
+	display: none;
+}
+
+.site-header__menu-list-open .site-header__background-effect {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 725px) {
+	.site-header__features {
+		display: none;
+	}
+
+	.site-header__hamburger {
+		margin-left: auto;
+	}
 }

@@ -132,7 +132,7 @@
 	}
 
 	.services__link {
-		padding: 25px 20px 30px;
+		padding: 25px 20px 25px;
 	}
 
 	.services__heading {
@@ -140,6 +140,7 @@
 		flex-direction: column;
 		font-size: 14px;
 		line-height: 17px;
+		margin-bottom: 30px;
 	}
 
 	.services__heading-highlighted {
@@ -153,12 +154,15 @@
 		overflow-x: auto;
 	}
 
+	.services__desc {
+		margin-bottom: 15px;
+	}
+
 	.services__list {
 		flex-wrap: nowrap;
-		width: 480px;
 		overflow-x: scroll;
-		margin: 0 auto;
-		padding-left: 820px;
+		margin: -20px;
+		justify-content: space-between;
 	}
 
 	.services__item {
