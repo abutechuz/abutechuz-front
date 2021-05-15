@@ -41,16 +41,22 @@
 @media screen and (max-width: 956px) {
 	.statistics__wrapper {
 		padding-top: 35px;
-		padding-bottom: 63px;
+		padding-bottom: 30px;
 	}
 
 	.statistics__list {
-		justify-content: space-between;
+		justify-content: center;
 		margin: -15px;
 	}
 
 	.statistics__item {
 		margin: 15px;
+	}
+}
+
+@media screen and (max-width: 507px) {
+	.statistics__list {
+		justify-content: space-between;
 	}
 }
 
