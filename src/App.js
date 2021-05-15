@@ -5,6 +5,7 @@ import Home from './screens/Home/Home'
 import Form from './screens/Form/Form'
 import SingleBlog from './screens/SingleBlog/SingleBlog'
 import './App.scss'
+import Articles from './screens/ARTICLES/Articles.js'
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Switch>
                     <Route path='/' component={Home} exact/>
                     <Route path='/form' component={Form} exact />
+                    <Route path='/articles' component={Articles} exact />
                     <Route path='/single-blog' component={SingleBlog} exact />
                 </Switch>
             </main>

@@ -1,0 +1,16 @@
+<svg width="973" height="455" viewBox="0 0 973 455" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="960.5" cy="197.5" r="9.5" fill="white" stroke="black" stroke-width="6"/>
+<circle cx="408.5" cy="147.5" r="4" fill="white" stroke="black" stroke-width="3"/>
+<circle cx="5.5" cy="5.5" r="4" fill="white" stroke="black" stroke-width="3"/>
+<circle cx="488.5" cy="449.5" r="4" fill="white" stroke="black" stroke-width="3"/>
+<rect x="852" y="383" width="60" height="4" rx="2" fill="black"/>
+<rect x="877" y="406" width="17" height="4" rx="2" fill="black"/>
+<rect x="908" y="406" width="40" height="4" rx="2" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M317.089 214.986L340.014 237.911C346.662 244.559 346.662 255.441 340.014 262.089L317.089 285.014C310.441 291.662 299.559 291.662 292.911 285.014L269.986 262.089C263.338 255.441 263.338 244.559 269.986 237.911L292.911 214.986C299.559 208.338 310.426 208.338 317.089 214.986Z" fill="url(#paint0_radial)"/>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(312.5 235.5) rotate(142.842) scale(59.6008)">
+<stop offset="0.0101192" stop-color="#06A39C" stop-opacity="0.07"/>
+<stop offset="1" stop-color="#06A39C"/>
+</radialGradient>
+</defs>
+</svg>

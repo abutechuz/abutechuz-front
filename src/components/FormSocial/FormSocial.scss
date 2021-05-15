@@ -29,3 +29,9 @@
         height: 30px;
     }
 }
+@media only screen and (max-width: 1042px) {
+    .form-social {
+        position: absolute;
+        top: calc(100% - 70px);
+    }
+}
