@@ -9,8 +9,10 @@ function ArticleVideo () {
             <section className="art-vid">
                 <div className="art-vid__big art-vid-big">
                     <Link className="art-vid-big__link">
-                        <img className="art-vid-big__img" src={bigImg} alt="" />
+                        <img className="art-vid-big__img" src={bigImg} alt="" width="735" height="400"/>
                     </Link>
+
+                    
                 </div>
             </section>
         </>
