@@ -159,6 +159,16 @@
 	font-style: italic;
 	font-display: swap;
 }
+/* bebas-neue-regular - latin */
+/* bebas-neue-regular - latin */
+@font-face {
+	font-family: 'Bebas Neue';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		 url('./assets/fonts/bebas-neue-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url('./assets/fonts/bebas-neue-v2-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 html {
 	height: 100%;
