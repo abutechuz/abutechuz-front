@@ -1,0 +1,140 @@
+.portfolio-plan {
+    background-color: #00094a;
+    color: #fff;
+}
+
+.portfolio-plan .container {
+    padding-top: 60px;
+    padding-bottom: 85px;
+}
+
+.portfoli-plan__heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 79px;
+}
+
+.portfolio-plan__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    border-top: 5px solid #30d2a3;
+    list-style-type: none;
+}
+
+.portfolio-plan__item {
+    position: relative;
+}
+
+.portfolio-plan__item::before {
+    position: absolute;
+    z-index: 1;
+    top: -16%;
+    left: -2%;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    content: '';
+}
+
+.portfolio-plan__heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.portfolio-plan__sub-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.portfolio-plan__sublist {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.portfolio-plan__sublist-item {
+    position: relative;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.portfolio-plan__sublist-item + .portfolio-plan__sublist-item {
+    margin-top: 15px;
+}
+
+.portfolio-plan__sublist-item::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    content: '';
+}
+
+@media only screen and (max-width: 1050px) {
+    .portfoli-plan__heading {
+        text-align: center;
+    }
+
+    .portfolio-plan__list {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 20px;
+        border-top: none;
+        border-left: 5px solid #30d2a3;
+    }
+
+    .portfolio-plan__item::before {
+        display: none;
+    }
+
+    .portfolio-plan__item + .portfolio-plan__item {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .portfoli-plan__heading {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .portfolio-plan__heading {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .portfolio-plan__sub-heading {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .portfolio-plan__sublist-item {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
