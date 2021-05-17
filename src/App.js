@@ -6,22 +6,28 @@ import Form from './screens/Form/Form'
 import SingleBlog from './screens/SingleBlog/SingleBlog'
 import './App.scss'
 import Articles from './screens/ARTICLES/Articles.js'
+import SinglePortfolio from './screens/SinglePortfolio/SinglePortfolio.js'
 
 function App() {
-	return (
-		<>
-			<Header />
-			<main>
-				<Switch>
-					<Route path='/' component={Home} exact />
-					<Route path='/form' component={Form} exact />
-					<Route path='/articles' component={Articles} exact />
-					<Route path='/single-blog' component={SingleBlog} exact />
-				</Switch>
-			</main>
-			<Footer />
-		</>
-	)
+    return (
+        <>
+            <Header />
+            <main>
+                <Switch>
+                    <Route path='/' component={Home} exact />
+                    <Route path='/form' component={Form} exact />
+                    <Route path='/articles' component={Articles} exact />
+                    <Route path='/single-blog' component={SingleBlog} exact />
+                    <Route
+                        path='/single-portfolio'
+                        component={SinglePortfolio}
+                        exact
+                    />
+                </Switch>
+            </main>
+            <Footer />
+        </>
+    )
 }
 
 export default App
