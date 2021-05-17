@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.scss'
 import Container from '../Container/Container'
 import { Link, NavLink } from 'react-router-dom'
@@ -6,9 +6,12 @@ import { Link, NavLink } from 'react-router-dom'
 import LogoImg from '../Lib/Svg/Logo'
 import PhoneCall from '../Lib/Svg/PhoneCall'
 import Hamburger from '../Lib/Svg/Hamburger'
+import Close from '../Lib/Svg/Close'
 
 function Header() {
 	const elHumburger = React.useRef()
+
+	const [x, setx] = useState(false)
 
 	return (
 		<header className='site-header'>
@@ -40,17 +43,37 @@ function Header() {
 						</Link>
 					</div>
 
-					<div className='site-header__background-effect'></div>
+					<div
+						className='site-header__background-effect'
+						onClick={() =>
+							elHumburger.current.classList.remove(
+								'site-header__menu-list-open'
+							)
+						}></div>
 
 					<button
 						className='site-header__hamburger'
-						onClick={() =>
-							elHumburger.current.classList.toggle(
-								'site-header__menu-list-open'
-							)
-						}>
-						МЕНЮ
+						onClick={() => {
+							if (x) {
+								elHumburger.current.classList.remove(
+									'site-header__menu-list-open'
+								)
+								elHumburger.current.classList.add(
+									'site-header__menu-list-close'
+								)
+								setx(false)
+							} else {
+								elHumburger.current.classList.add('site-header__menu-list-open')
+								elHumburger.current.classList.remove(
+									'site-header__menu-list-close'
+								)
+								setx(true)
+							}
+						}}>
+						<span className='site-header__hamburger-text-menu'>МЕНЮ</span>
+						<span className='site-header__hamburger-text-close'>ЗАКРЫТЬ</span>
 						<Hamburger className='hamburger__icon' />
+						<Close className='close__icon' />
 					</button>
 
 					<ul className='site-header__menu-list'>
