@@ -121,6 +121,8 @@
 	position: relative;
 	align-items: center;
 	margin-left: 35px;
+	width: 88px;
+	height: 15px;
 	border: none;
 	background-color: transparent;
 	padding: 0;
@@ -135,11 +137,39 @@
 	margin-left: 10px;
 }
 
+.close__icon {
+	display: none;
+	margin-left: 10px;
+}
+
+.site-header__menu-list-open .hamburger__icon {
+	display: none;
+}
+
+.site-header__menu-list-open .close__icon {
+	display: block;
+}
+
+.site-header__hamburger-text-close {
+	display: none;
+}
+
+.site-header__menu-list-open .site-header__hamburger-text-close {
+	display: block;
+}
+
+.site-header__menu-list-open .site-header__hamburger-text-menu {
+	display: none;
+}
+
 .site-header__menu-list {
 	display: none;
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	animation-duration: 1s;
+	transition: transform 0.3s ease;
+	animation-name: menuanimationsC;
 }
 
 .site-header__menu-list-open .site-header__menu-list {
@@ -156,6 +186,35 @@
 	width: 40%;
 	height: 100vh;
 	z-index: 999;
+	animation-name: menuanimation;
+	animation-duration: 1s;
+	transition: transform 0.3s ease;
+}
+
+@keyframes menuanimation {
+	0% {
+		transform: translateX(1500px);
+	}
+	100% {
+		transform: translateX(calc(50% + 510px));
+	}
+}
+
+@keyframes menuanimations {
+	0% {
+		transform: translateX(calc(50% + 510px));
+		display: flex;
+	}
+	100% {
+		transform: translateX(1500px);
+		display: none;
+	}
+}
+
+.site-header__menu-list-close .site-header__menu-list {
+	animation-name: menuanimations;
+	animation-duration: 1s;
+	transition: transform 0.3s ease;
 }
 
 .site-header__menu-item + .site-header__menu-item {
