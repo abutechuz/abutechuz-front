@@ -60,8 +60,38 @@
 }
 
 @media only screen and (max-width: 1210px) {
-    .portfolio-result__img {
-        width: 450px;
-        height: 350px;
+    .portfolio-features__item {
+        flex-direction: column;
+    }
+
+    .portfolio-features__item:nth-child(2n) .portfolio-features__item-img {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .portfolio-features__item .portfolio-features__item-img {
+        order: -1;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .portfolio-intro {
+        padding-top: 120px;
+        padding-bottom: 20px;
+    }
+
+    .portfolio-features__heading {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+    .portfolio-features__item-heading {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .portfolio-features__item-text {
+        font-size: 18px;
+        line-height: 1.5;
     }
 }

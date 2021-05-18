@@ -25,9 +25,14 @@
     line-height: 30px;
 }
 
-@media only screen and (max-width: 1210px) {
-    .portfolio-result__img {
-       width: 100px;
+@media only screen and (max-width: 500px) {
+    .portfolio-result__heading {
+        font-size: 24px;
+        line-height: 1.5;
     }
-    
+
+    .portfolio-result__paragraph {
+        font-size: 18px;
+        line-height: 1.5;
+    }
 }
