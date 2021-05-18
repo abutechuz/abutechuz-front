@@ -7,6 +7,7 @@ import PortfolioSlider from '../../components/PortfolioSlider/PortfolioSlider'
 import PortfolioFeautures from '../../components/PortfolioFeautures/PortfolioFeautures'
 import PortfolioResult from '../../components/PortfolioResult/PortfolioResult'
 import PortfolioTech from '../../components/PortfolioTech/PortfolioTech'
+import PortfolioContact from '../../components/PortfolioContact/PortfolioContact'
 
 function SinglePortfolio() {
     return (
@@ -18,6 +19,7 @@ function SinglePortfolio() {
             <PortfolioFeautures />
             <PortfolioResult />
             <PortfolioTech />
+            <PortfolioContact />
         </>
     )
 }
