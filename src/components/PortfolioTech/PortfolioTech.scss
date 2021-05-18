@@ -1,0 +1,122 @@
+.portfolio-tech .container {
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+.portfolio-tech__heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 79px;
+}
+
+.portfolio-tech__paragraph {
+    width: 100%;
+    max-width: 580px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.portfolio-tech__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.portfolio-tech__item-heading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.portfolio-tech__stack-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.portfolio-tech__item {
+    padding: 50px 0;
+}
+.portfolio-tech__item + .portfolio-tech__item {
+    border-top: 3px solid rgba($color: #000000, $alpha: 0.3);
+}
+.portfolio-tech__stack {
+    display: flex;
+}
+
+.portfolio-tech__stack-list {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.portfolio-tech__stack-item {
+    flex-shrink: 0;
+}
+
+.portfolio-tech__stack-item + .portfolio-tech__stack-item {
+    margin-left: 40px;
+}
+
+.portfolio-tech__stack-item img {
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.portfolio-tech__stack-heading {
+    display: block;
+}
+
+.portfolio-tech__stack-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1035px) {
+    .portfolio-tech__heading {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .portfolio-tech__item-heading {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .portfolio-tech__stack-heading {
+        font-size: 18px;
+        font-size: 1.5em;
+    }
+
+    .portfolio-tech__stack {
+        flex-direction: column;
+    }
+
+    .portfolio-tech__stack-list {
+        width: 100%;
+    }
+
+    .portfolio-tech__stack-list + .portfolio-tech__stack-list {
+        margin-top: 40px;
+    }
+
+    .portfolio-tech__stack-item {
+        margin: 15px;
+    }
+
+    .portfolio-tech__stack-item + .portfolio-tech__stack-item {
+        margin: 15px;
+    }
+}

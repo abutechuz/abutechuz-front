@@ -5,6 +5,7 @@ import PortfolioIntro from '../../components/PortfolioIntro/PortfolioIntro'
 import PortfolioPlan from '../../components/PortfolioPlan/PortfolioPlan'
 import PortfolioFeautures from '../../components/PortfolioFeautures/PortfolioFeautures'
 import PortfolioResult from '../../components/PortfolioResult/PortfolioResult'
+import PortfolioTech from '../../components/PortfolioTech/PortfolioTech'
 
 function SinglePortfolio() {
     return (
@@ -14,6 +15,7 @@ function SinglePortfolio() {
             <PortfolioPlan />
             <PortfolioFeautures />
             <PortfolioResult />
+            <PortfolioTech />
         </>
     )
 }
