@@ -7,6 +7,7 @@ import SingleBlog from './screens/SingleBlog/SingleBlog'
 import './App.scss'
 import Articles from './screens/ARTICLES/Articles.js'
 import SinglePortfolio from './screens/SinglePortfolio/SinglePortfolio.js'
+import SingleService from './screens/SingleService/SingleService.js'
 
 function App() {
     return (
@@ -21,6 +22,11 @@ function App() {
                     <Route
                         path='/single-portfolio'
                         component={SinglePortfolio}
+                        exact
+                    />
+                    <Route
+                        path='/single-service'
+                        component={SingleService}
                         exact
                     />
                 </Switch>
