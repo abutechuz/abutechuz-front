@@ -2,6 +2,7 @@ import React from 'react'
 import './HomeTeam.scss'
 
 function HomeTeam() {
+ 
     return (
         <section className='hometeam'>
             <div className='container'>

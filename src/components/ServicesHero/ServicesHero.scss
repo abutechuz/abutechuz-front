@@ -35,13 +35,15 @@
     line-height: 22px;
     color: #30d2a3;
     text-decoration: none;
+
+    &:hover svg {
+        transform: translateX(10px);
+    }
 }
 
 .services-hero__create-link svg {
+    transition: transform 0.3s ease;
     margin-left: 15px;
-}
-.services-hero__create-link:hover svg {
-    margin-left: 20px;
 }
 
 @media only screen and (max-width: 800px) {

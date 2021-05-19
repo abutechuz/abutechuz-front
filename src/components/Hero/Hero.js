@@ -11,7 +11,7 @@ function Hero() {
 			<Container>
 				<div className='hero__container'>
 					<div className='hero__text-wrapper'>
-						<h1 className='hero__heading'>Izlamasdan topamiz :)</h1>
+						<h1 className='hero__heading'>Izlamasdan topamiz</h1>
 						<p className='hero__desc'>
 							Abutech has been eligible to provide the best of services to our
 							clients across the world remaining to our.
