@@ -7,7 +7,7 @@ import SingleBlog from './screens/SingleBlog/SingleBlog'
 import './App.scss'
 import Articles from './screens/ARTICLES/Articles.js'
 import SinglePortfolio from './screens/SinglePortfolio/SinglePortfolio.js'
-import SingleService from './screens/SingleService/SingleService.js'
+import SingleService from './screens/SingleService/SingleService'
 
 function App() {
     return (

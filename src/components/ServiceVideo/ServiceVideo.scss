@@ -1,0 +1,26 @@
+.service-video .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.service-video__heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 63px;
+    color: #000000;
+}
+
+.service-video__frame {
+    width: 100%;
+    max-height: 600px;
+    border: none;
+}
+
+@media only screen and (max-width: 785px) {
+    .service-video__heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
