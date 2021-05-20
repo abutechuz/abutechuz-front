@@ -78,27 +78,23 @@ function Header() {
 
 					<ul className='site-header__menu-list'>
 						<li className='site-header__menu-item'>
-							<Link className='site-header__menu-link'>Главная</Link>
+							<Link className='site-header__menu-link' to='/' exact>Главная</Link>
 						</li>
 
 						<li className='site-header__menu-item'>
-							<Link className='site-header__menu-link'>О нас</Link>
+							<Link className='site-header__menu-link' to=''>Сервисы</Link>
 						</li>
 
 						<li className='site-header__menu-item'>
-							<Link className='site-header__menu-link'>Сервисы</Link>
+							<Link className='site-header__menu-link' to='/articles'>Ресурсы</Link>
 						</li>
 
 						<li className='site-header__menu-item'>
-							<Link className='site-header__menu-link'>Ресурсы</Link>
+							<Link className='site-header__menu-link' to='/projects'>Проекты</Link>
 						</li>
 
 						<li className='site-header__menu-item'>
-							<Link className='site-header__menu-link'>Проекты</Link>
-						</li>
-
-						<li className='site-header__menu-item'>
-							<Link className='site-header__menu-link'>Контакты</Link>
+							<Link className='site-header__menu-link' to='/contacts'>Контакты</Link>
 						</li>
 					</ul>
 				</div>
