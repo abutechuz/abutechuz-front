@@ -56,22 +56,22 @@
 }
 
 .hometeam__item:nth-child(3) {
-    bottom: 5%;
-    left: 12%;
+    bottom: 10%;
+    left: 5%;
 }
 
 .hometeam__item:nth-child(4) {
-    bottom: 15%;
+    bottom: 20%;
     right: 50%;
 }
 
 .hometeam__item:nth-child(5) {
-    bottom: 10%;
-    left: 58%;
+    bottom: 15%;
+    left: 55%;
 }
 
 .hometeam__item:nth-child(6) {
-    bottom: 0;
+    bottom: 5%;
     right: 2%;
 }
 
@@ -82,6 +82,7 @@
 
 .hometeam__item-figure-img {
     vertical-align: middle;
+    object-fit: cover;
 }
 
 .hometeam__item-figcaption {
@@ -107,11 +108,14 @@
 
 @media only screen and (max-width: 1200px) {
     .hometeam__item:nth-child(1) {
-        left: 48%;
+        left: 45%;
     }
 
     .hometeam__item:nth-child(4) {
-        right: 45%;
+        right: 50%;
+    }
+    .hometeam__item:nth-child(5) {
+        left: 52%;
     }
 }
 
@@ -127,12 +131,12 @@
 
     .hometeam__item:nth-child(1) {
         top: 210px;
-        left: 48%;
+        left: 55%;
     }
 
     .hometeam__item:nth-child(2) {
         top: 310px;
-        left: 20px;
+        left: 50px;
     }
 
     .hometeam__item:nth-child(3) {
@@ -167,28 +171,28 @@
     }
 
     .hometeam__item:nth-child(2) img {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
 
     .hometeam__item:nth-child(3) img {
-        width: 185px;
-        height: 185px;
+        width: 200px;
+        height: 200px;
     }
 
     .hometeam__item:nth-child(4) img {
-        width: 175px;
-        height: 175px;
+        width: 200px;
+        height: 200px;
     }
 
     .hometeam__item:nth-child(5) img {
-        width: 185px;
-        height: 185px;
+        width: 200px;
+        height: 200px;
     }
 
     .hometeam__item:nth-child(6) img {
-        width: 175px;
-        height: 175px;
+        width: 200px;
+        height: 200px;
     }
 
     .hometeam__item-figcaption {
@@ -219,6 +223,10 @@
         height: 140px;
     }
 
+    .hometeam__item:nth-child(2) {
+        left: 10px;
+    }
+
     .hometeam__item:nth-child(2) img {
         width: 140px;
         height: 140px;
@@ -226,7 +234,7 @@
 
     .hometeam__item:nth-child(3) {
         top: 420px;
-        right: 0;
+        right: 10px;
     }
 
     .hometeam__item:nth-child(3) img {
@@ -236,7 +244,7 @@
 
     .hometeam__item:nth-child(4) {
         top: 500px;
-        left: 5%;
+        left: 10px;
     }
 
     .hometeam__item:nth-child(4) img {
@@ -256,7 +264,7 @@
 
     .hometeam__item:nth-child(6) {
         top: 670px;
-        left: 5%;
+        left: 10px;
     }
 
     .hometeam__item:nth-child(6) img {

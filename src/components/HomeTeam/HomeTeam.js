@@ -1,8 +1,15 @@
 import React from 'react'
 import './HomeTeam.scss'
+import { useQuery } from 'react-query'
+import { client } from '../../utils/api-client'
 
 function HomeTeam() {
- 
+    const { data: members, isSuccess } = useQuery({
+        queryKey: 'list-items',
+        queryFn: () => client('members?page=1&limit=6'),
+    })
+
+    isSuccess && console.log(members)
     return (
         <section className='hometeam'>
             <div className='container'>
@@ -18,103 +25,30 @@ function HomeTeam() {
                 </p>
 
                 <ul className='hometeam__list'>
-                    <li className='hometeam__item'>
-                        <figure className='hometeam__item-figure'>
-                            <img
-                                className='hometeam__item-figure-img'
-                                src='https://via.placeholder.com/285x285'
-                                alt='Team member'
-                                width='285'
-                                height='285'
-                            />
-                            <figcaption className='hometeam__item-figcaption'>
-                                Sinfdoshim Maftun
-                                <small className='hometeam__item-small-figcaption'>
-                                    Smm manager
-                                </small>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li className='hometeam__item'>
-                        <figure className='hometeam__item-figure'>
-                            <img
-                                src='https://via.placeholder.com/230x250'
-                                alt='Team member'
-                                width='230'
-                                height='250'
-                            />
-                            <figcaption className='hometeam__item-figcaption'>
-                                Sinfdoshim Maftun
-                                <small className='hometeam__item-small-figcaption'>
-                                    Smm manager
-                                </small>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li className='hometeam__item'>
-                        <figure className='hometeam__item-figure'>
-                            <img
-                                src='https://via.placeholder.com/220x245'
-                                alt='Team member'
-                                width='220'
-                                height='245'
-                            />
-                            <figcaption className='hometeam__item-figcaption'>
-                                Sinfdoshim Maftun
-                                <small className='hometeam__item-small-figcaption'>
-                                    Smm manager
-                                </small>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li className='hometeam__item'>
-                        <figure className='hometeam__item-figure'>
-                            <img
-                                src='https://via.placeholder.com/210x240'
-                                alt='Team member'
-                                width='210'
-                                height='240'
-                            />
-                            <figcaption className='hometeam__item-figcaption'>
-                                Sinfdoshim Maftun
-                                <small className='hometeam__item-small-figcaption'>
-                                    Smm manager
-                                </small>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li className='hometeam__item'>
-                        <figure className='hometeam__item-figure'>
-                            <img
-                                src='https://via.placeholder.com/205x220'
-                                alt='Team member'
-                                width='205'
-                                height='220'
-                            />
-                            <figcaption className='hometeam__item-figcaption'>
-                                Sinfdoshim Maftun
-                                <small className='hometeam__item-small-figcaption'>
-                                    Smm manager
-                                </small>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li className='hometeam__item'>
-                        <figure className='hometeam__item-figure'>
-                            <img
-                                src='https://via.placeholder.com/220x220'
-                                alt='Team member'
-                                width='220'
-                                height='220'
-                            />
-                            <figcaption className='hometeam__item-figcaption'>
-                                Sinfdoshim Maftun
-                                <small className='hometeam__item-small-figcaption'>
-                                    Smm manager
-                                </small>
-                            </figcaption>
-                        </figure>
-                    </li>
+                    {isSuccess &&
+                        members.map((member) => (
+                            <li className='hometeam__item'>
+                                <figure className='hometeam__item-figure'>
+                                    <img
+                                        className='hometeam__item-figure-img'
+                                        src={
+                                            process.env.REACT_APP_API_URL +
+                                            '/img/' +
+                                            member.member_picture
+                                        }
+                                        alt='Team member'
+                                        width='250'
+                                        height='250'
+                                    />
+                                    <figcaption className='hometeam__item-figcaption'>
+                                        {member.member_fullname}
+                                        <small className='hometeam__item-small-figcaption'>
+                                            {member.member_profession}
+                                        </small>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        ))}
                 </ul>
             </div>
         </section>

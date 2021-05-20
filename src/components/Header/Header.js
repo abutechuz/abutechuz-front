@@ -30,8 +30,8 @@ function Header() {
 						<select
 							className='site-header__select-lang'
 							name='select-lang'
-							id='select-lang'>
-							<option value='uz' selected>
+							id='select-lang' defaultValue='uz'>
+							<option value='uz'>
 								Uz
 							</option>
 							<option value='ru'>Ru</option>
@@ -82,7 +82,7 @@ function Header() {
 						</li>
 
 						<li className='site-header__menu-item'>
-							<Link className='site-header__menu-link' to=''>Сервисы</Link>
+							<Link className='site-header__menu-link' to='/services'>Сервисы</Link>
 						</li>
 
 						<li className='site-header__menu-item'>
